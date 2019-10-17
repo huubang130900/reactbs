@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import SinhVien from './component/SinhVien/SinhVien';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div className="App">
+        <h1>Ứng dụng React đầu tiên</h1>
+        <p>Đến từ Châu Hữu Bằng</p>
+        <SinhVien hoten='Châu Hữu Bằng' tuoi = '19'>
+          Sở thích: Chơi Game, Xem phim, Nghe nhạc ...
+        </SinhVien>
+        <SinhVien hoten='Nguyễn Quốc Cường' tuoi = '19'>
+          Sở thích: Xem JA* ...
+        </SinhVien>
+        <SinhVien hoten='Nguyễn Thị Kiều My' tuoi = '19'/>
+      </div>
+    );     
+  }
 }
-
 export default App;
+
