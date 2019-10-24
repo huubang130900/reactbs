@@ -8,7 +8,7 @@ class SanPham extends  React.Component{
             <p>{this.props.children}</p>
         </div>
     );
- }
+    }
 }
 
-export default SanPham
+export default SanPham;
